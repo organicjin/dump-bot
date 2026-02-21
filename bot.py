@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 KST = timezone(timedelta(hours=9))
 
-CATEGORIES = ["아이디어", "업무", "감정/생각", "배움", "할일", "기타"]
+CATEGORIES = ["아이디어", "인사이트", "기타"]
 
 claude = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY) if ANTHROPIC_API_KEY else None
 notion = NotionClient(auth=NOTION_API_KEY) if NOTION_API_KEY else None
